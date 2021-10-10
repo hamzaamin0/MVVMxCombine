@@ -13,6 +13,13 @@
 		04F341E3271154BA00923404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F341E1271154BA00923404 /* Main.storyboard */; };
 		04F341E5271154C300923404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F341E4271154C300923404 /* Assets.xcassets */; };
 		04F341E8271154C300923404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F341E6271154C300923404 /* LaunchScreen.storyboard */; };
+		04F341F12711562D00923404 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F341F02711562D00923404 /* NetworkService.swift */; };
+		04F342092711871100923404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F342082711871100923404 /* AppDelegate.swift */; };
+		04F3420B2711871100923404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3420A2711871100923404 /* SceneDelegate.swift */; };
+		04F3420D2711871100923404 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3420C2711871100923404 /* ViewController.swift */; };
+		04F342102711871100923404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F3420E2711871100923404 /* Main.storyboard */; };
+		04F342122711871900923404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F342112711871900923404 /* Assets.xcassets */; };
+		04F342152711871900923404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F342132711871900923404 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +31,26 @@
 		04F341E4271154C300923404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F341E7271154C300923404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F341E9271154C300923404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F341F02711562D00923404 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		04F342062711871100923404 /* MVVMVersion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMVersion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F342082711871100923404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F3420A2711871100923404 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04F3420C2711871100923404 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04F3420F2711871100923404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F342112711871900923404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F342142711871900923404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F342162711871900923404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04F341D5271154BA00923404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F342032711871100923404 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				04F341DA271154BA00923404 /* MVVm-Combine */,
+				04F342072711871100923404 /* MVVMVersion */,
 				04F341D9271154BA00923404 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				04F341D8271154BA00923404 /* MVVm-Combine.app */,
+				04F342062711871100923404 /* MVVMVersion.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +88,23 @@
 				04F341E4271154C300923404 /* Assets.xcassets */,
 				04F341E6271154C300923404 /* LaunchScreen.storyboard */,
 				04F341E9271154C300923404 /* Info.plist */,
+				04F341F02711562D00923404 /* NetworkService.swift */,
 			);
 			path = "MVVm-Combine";
+			sourceTree = "<group>";
+		};
+		04F342072711871100923404 /* MVVMVersion */ = {
+			isa = PBXGroup;
+			children = (
+				04F342082711871100923404 /* AppDelegate.swift */,
+				04F3420A2711871100923404 /* SceneDelegate.swift */,
+				04F3420C2711871100923404 /* ViewController.swift */,
+				04F3420E2711871100923404 /* Main.storyboard */,
+				04F342112711871900923404 /* Assets.xcassets */,
+				04F342132711871900923404 /* LaunchScreen.storyboard */,
+				04F342162711871900923404 /* Info.plist */,
+			);
+			path = MVVMVersion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +127,23 @@
 			productReference = 04F341D8271154BA00923404 /* MVVm-Combine.app */;
 			productType = "com.apple.product-type.application";
 		};
+		04F342052711871100923404 /* MVVMVersion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F342172711871900923404 /* Build configuration list for PBXNativeTarget "MVVMVersion" */;
+			buildPhases = (
+				04F342022711871100923404 /* Sources */,
+				04F342032711871100923404 /* Frameworks */,
+				04F342042711871100923404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVVMVersion;
+			productName = MVVMVersion;
+			productReference = 04F342062711871100923404 /* MVVMVersion.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +154,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					04F341D7271154BA00923404 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					04F342052711871100923404 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -115,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				04F341D7271154BA00923404 /* MVVm-Combine */,
+				04F342052711871100923404 /* MVVMVersion */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +191,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04F342042711871100923404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F342152711871900923404 /* LaunchScreen.storyboard in Resources */,
+				04F342122711871900923404 /* Assets.xcassets in Resources */,
+				04F342102711871100923404 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,7 +210,18 @@
 			files = (
 				04F341E0271154BA00923404 /* ViewController.swift in Sources */,
 				04F341DC271154BA00923404 /* AppDelegate.swift in Sources */,
+				04F341F12711562D00923404 /* NetworkService.swift in Sources */,
 				04F341DE271154BA00923404 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F342022711871100923404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F3420D2711871100923404 /* ViewController.swift in Sources */,
+				04F342092711871100923404 /* AppDelegate.swift in Sources */,
+				04F3420B2711871100923404 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +240,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				04F341E7271154C300923404 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04F3420E2711871100923404 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F3420F2711871100923404 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F342132711871900923404 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F342142711871900923404 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,6 +417,44 @@
 			};
 			name = Release;
 		};
+		04F342182711871900923404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UVSDLMQ6PH;
+				INFOPLIST_FILE = MVVMVersion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.droptech.MVVMVersion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04F342192711871900923404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UVSDLMQ6PH;
+				INFOPLIST_FILE = MVVMVersion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.droptech.MVVMVersion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +472,15 @@
 			buildConfigurations = (
 				04F341ED271154C300923404 /* Debug */,
 				04F341EE271154C300923404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F342172711871900923404 /* Build configuration list for PBXNativeTarget "MVVMVersion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F342182711871900923404 /* Debug */,
+				04F342192711871900923404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
